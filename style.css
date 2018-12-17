@@ -1,0 +1,235 @@
+/*Style cho menu*/
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: black !important;
+    background-color: #f5f4f4 !important;
+}
+
+.navbar-inverse {
+    background-color: #41a748 !important;
+    border-color: #4ace53  !important; 
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white !important;
+    font-size: 16px;
+    /*text-shadow: #0F1112 1px 1px; */
+    border-right: 1px solid #6d6b6b;
+}
+
+li:hover {
+    background: teal;
+}
+
+/*finish style menu*/
+
+.jumbotron { padding: 5px 0px 5px 0px  !important; }	
+
+i.fab.fa-google-plus-g { color: red; font-size: 17px; }
+.btn { padding: 2px 10px !important; }
+
+.container.header_danhmuc { margin-top: -30px; padding: 0px; }
+
+.col-md-7.header_danhmuc_left { background: #72e258; color: white; padding: 15px; font-size: 15px; font-weight: bold;}
+
+.col-md-5.header_danhmuc_right { padding-left: 0px; }
+
+ul.nav.nav-pills { background: whitesmoke; }
+
+div#search_bds { background: #4a7373; padding: 13px 10px; }
+
+.form-control { height: 25px !important; padding: 0px 10px !important; }
+
+.text-center.header_right_static, .left_title_khuvuc, .left_title_bds_ban, .left_title_bds_thue, 
+.home_content_title, .title_new_bds, .title_price_proj, .title_receive_email, .nd_slide {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel-primary>.panel-heading {
+    color: #fff !important;
+    background-color: #4088c5 !important;
+}
+
+.header_right_cat{ font-weight: bold; }
+div#header_danhmuc_right { border-radius: 0px; }
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {color: #fff !important; border-radius: 0px; }
+
+.col-md-6.header_right_cat { font-size: 15px; }
+.panel-body.thitruong_proj { overflow-y: scroll; height: 285px; }
+
+.right_bds_list { border-bottom: 1px dotted blue;padding: 5px 0px 0px 0px; }
+.right_bds_date{ opacity: 0.7; }
+
+b.home_land_address { font-size: 11px; opacity: 0.9; }
+
+img{ max-width: 100%; }
+img:hover{ transform: scale(1.05); }
+
+a{text-decoration: none !important; color: #0D4D95 !important}
+
+.panel-heading { padding: 5px 15px !important; }
+
+i.fas.fa-arrow-circle-right { color: #f15151; margin-right:10px; }
+i.fas.fa-plus-circle { color: green; margin-right:10px; }
+i.fas.fa-home { color: #ffcc37; font-size: 22px;}
+
+.home_land_price { color: red; font-weight: bold;}
+
+.col-md-4.land_big_list { margin-bottom: 35px; }
+
+i.far.fa-envelope, .fas.fa-newspaper, .far.fa-money-bill-alt { color: yellow; font-size: 20px; }
+
+.left_category.col-md-3 { padding-left: 0px; }
+.col-md-3.right_info_bds { padding-right: 0px; }
+
+.col-md-6.info_nhadat { padding: 0px; }
+
+a.menu_expand {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 2px solid  blue;
+    font-weight: bold; color: black;
+}
+
+p.header_right_sobds { padding-left: 15px; background: #e0e05e; }
+
+b.num_deal { font-size: 16px; }
+b.post_bds { color: #ece81c; font-size: 20px; }
+
+a.view_all_price { color: white !important; font-size: 13px}
+span.price_bds_right.pull-right { color: red; font-weight: bold;}
+
+a.new_bds, .home_land_title, .left_city_list { font-weight: bold; }
+
+/*style form login*/
+.jumbotron.right_dangnhap { padding: 15px 35px !important; border-radius: 0px !important; }
+
+.right_dangnhap_title {
+    font-size: 16px;
+    font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.panel-body.right_bds_content { overflow-y: auto; height: 235px; }
+
+input#mail { height: 32px !important; border-radius: 0px !important; }
+
+ .panel-body.nd_dky, .cat_bds, .nd_nhadat_nb, .nd_doitac { background: #f7f7f7a3; }
+
+.panel-body.service_bds{background: #fff9f9}
+.form-control {
+    font-size: 13px !important;
+    border-radius: 20px !important;
+}
+
+button#btn_search_bds {
+    border-radius: 15px;
+    outline: none;
+}
+
+div#login { padding-left: 0px; }
+input#usr { margin-bottom: -10px; }
+
+.quên_acc { font-size: 12px; margin-top: 10px; }
+/*finish*/
+
+img.post_new { width: 270px; height: 50px; margin-bottom: 10px; }
+
+button#btn_login, #btn_dky,button#btn_search_bds { font-weight: bold; }
+#resgiter_receive_new{ font-weight: bold }
+
+a:focus, a:hover { color: #d41f37 !important; }
+span.quote { color: yellow; }
+
+img.img_land_big.col-xs-12 { padding-left: 0px; }
+
+.col-md-6.main_content { padding: 0px; }
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 6px !important;
+}
+
+
+/* carousel */
+/* Control buttons  */
+#quote-carousel .carousel-control { background: none; font-size: 1.7em; text-shadow: none; margin-top: 85px; }
+
+#quote-carousel .carousel-control.left{ left: -34px; }
+#quote-carousel .carousel-control.right { right: -34px !important; }
+
+#quote-carousel .carousel-indicators { right: 50%; top: auto; bottom: 0px; margin-right: -19px; }
+#quote-carousel .carousel-indicators li { background: #c0c0c0; }
+
+#quote-carousel .carousel-indicators .active  { background: #f30505; }
+#quote-carousel img { width: 300px; }
+/* End carousel */
+
+.carousel-control { width: 10% !important; }
+.carousel-control { opacity: 0.8 !important; }
+
+.carousel-inner {
+    background: #f9b2b2a3 !important;
+    padding: 20px 5px 0px 5px !important;
+}
+
+.media-carousel {
+    margin: 0px !important;
+    padding: 0 40px 30px 40px !important;
+}
+
+.carousel-inner.info_doanhNghiep {
+    padding: 10px !important;
+}
+
+/*.media-carousel .carousel-control.left, .carousel-control.right {
+    width: 40px !important; opacity: 1 !important;
+}*/
+
+a.left.carousel-control.lui, a.right.carousel-control.tien {
+    width: 40px !important;
+    opacity: 1 !important;     background: thistle;
+}
+
+
+/*Responsive mobile*/
+@media(max-width: 414px){
+    .left_category.col-md-3, .col-md-12.primary_nhadat, .col-md-3.right_primary_bds { padding: 0px; }
+    .jumbotron.right_dangnhap { display: none; }
+
+    .col-md-3.right_info_bds { padding-right: 15px; }
+
+    div#search_bds { background: darkslategrey; padding: 35px 10px; }
+
+    .col-md-5.header_danhmuc_right { padding-left: 15px; }
+
+    .header_menu_small_right.pull-right {
+        padding: 10px 0px 10px 10px;
+        background: blanchedalmond;
+    }
+
+    .col-md-7.header_danhmuc_left {
+     background: none; 
+    }
+
+    .col-md-4.land_big_list {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 15px;
+      padding: 0 0px 30px 0px;
+    }
+    
+    div#content {
+        padding-right: 0px;
+    }
+}
+
+

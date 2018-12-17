@@ -1,0 +1,581 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>If(stress==0) alert('lazy')</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/slider.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+    <!-- Menu_header -->
+    <nav class="navbar navbar-inverse">
+      <div class="container menu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Trang chủ</a></li>
+            <li><a href="#">Bất động sản</a></li>
+            <li><a href="#">Dự án</a></li>
+            <li><a href="">Doanh nghiệp</a></li>
+            <li><a href="">Thị trường</a></li>
+            <li><a href="">Tin tức-Phong thủy</a></li>
+            <li><a href="">Bản đồ</a></li>
+            <li><a href="">Hỏi đáp</a></li>
+            <li><a href="">Liên hệ</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav> 
+  
+
+
+  <!-- menu_redirect -->
+  <div class="jumbotron">
+    <div class="container">
+      <button class="btn btn-default btn-xs"><i class="fab fa-google-plus-g"></i></button>
+      <button class="btn btn-primary btn-xs"><i class="far fa-thumbs-up"></i> Like</button>
+      <button class="btn btn-primary btn-xs"><i class="fas fa-share-alt"></i> Share</button>
+
+      <div class="header_menu_small_right pull-right">
+        <a href="" class="menu_expand">Hỗ trợ</a>
+        <a href="" class="menu_expand">Bảng giá</a>
+        <a href="" class="menu_expand">Thông báo</a>
+        <a href="" class="menu_expand">Đặt làm trang chủ</a><span class="label label-warning">New</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tìm kiếm, xem thống kê thông tin nhà đất -->
+  <div class="container header_danhmuc">
+    <div class="col-md-7 header_danhmuc_left">
+      <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#Nha_Dat_Ban">Nhà đất bán</a></li>
+        <li><a data-toggle="pill" href="#Nha_Dat_Cho_Thue">Nhà đất cho thuê</a></li>
+      </ul>
+      
+      <div class="tab-content col-md-12" id="search_bds">
+        <div id="Nha_Dat_Ban" class="tab-pane fade in active">
+          <div class="form-group col-md-4 col-sm-6" id="cat_bds">
+            <select class="form-control" id="sel1">
+              <option>Loại BĐS</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4 col-sm-6" id="select_city">
+            <select class="form-control" id="sel1">
+              <option>Chọn tỉnh/TP</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4 col-sm-6" id="select_District">
+            <select class="form-control" id="sel1">
+              <option>Chọn Quận/ Huyện</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4 col-sm-6" id="select_price">
+            <select class="form-control" id="sel1">
+              <option>Khoảng giá</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4 " id="select_area">
+            <select class="form-control" id="sel1">
+              <option>Diện tích</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4" id="select_proj">
+            <select class="form-control" id="sel1">
+              <option>Chọn dự án</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+
+          <div class="col-md-2 pull-right">  
+            <button class="btn btn-danger pull-right" id="btn_search_bds">Tìm kiếm <i class="fas fa-search"></i></button>
+          </div>        
+        </div>
+
+        <div id="Nha_Dat_Cho_Thue" class="tab-pane fade">
+          <h3>Nhà đất cho thuê</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-5 header_danhmuc_right">
+        <div class="panel panel-primary" id="header_danhmuc_right">
+          <div class="panel-heading text-center header_right_static"> <span class="quote"> >> </span> Hơn <b class="post_bds">2000</b> BĐS được đăng lên mỗi ngày</div>
+          <div class="panel-body service_bds">
+            <p class="header_right_sobds"><b class="num_deal">1,947</b><span class="deal_bds"> BĐS đang giao dịch</span> </p>
+            <div class="col-md-6 header_right_cat_service">
+              <div class="header_right_cat"><a href="">Bán đất</a><small> (1256)</small><br></div>
+              <div class="header_right_cat"><a href="">Cho thuê văn phòng</a><small> (99)</small><br></div>
+              <div class="header_right_cat"><a href="">Bán kho xưởng</a><small> (99)</small><br></div>
+              <div class="header_right_cat"><a href="">Bán mặt bằng</a><small> (99)</small><br></div>
+              <div class="header_right_cat"><a href="">Cho thuê đất</a><small> (99)</small></div>
+            </div>
+
+            <div class="col-md-6 header_right_cat_service">
+              <div class="header_right_cat"><a href="">Bán nhà</a><small> (99)</small><br></div>
+              <div class="header_right_cat"><a href="">Cho thuê cửa hàng</a><small> (99)</small><br></div>
+              <div class="header_right_cat"><a href="">Cho thuê mặt bằng</a><small> (99)</small><br></div>
+              <div class="header_right_cat"><a href="">Cho thuê kho xưởng</a><small> (99)</small><br></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Service_list nhà đất  -->
+  <br>
+  <div class="container" id="content">
+    <div class="left_category col-md-3">
+      <div class="panel-group">
+        <div class="panel panel-primary">
+          <div class="panel-heading left_title_khuvuc"><i class="fas fa-home"></i> Nhà đất theo khu vực</div>
+          <div class="panel-body cat_bds">
+            <div class="left_city_list"><a href="">Bình Thuận</a></div>
+            <div class="left_city_list"><a href="">Hòa Bình</a></div>
+            <div class="left_city_list"><a href="">Hưng Yên</a></div>
+            <div class="left_city_list"><a href="">Khánh Hòa</a></div><br>
+            <div class="left_view_all">
+              <a href="">
+                <button class="btn btn-success">Xem tất cả</button>
+              </a></div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading left_title_bds_ban"><i class="fas fa-home"></i> Nhà đất bán</div>
+          <div class="panel-body cat_bds">
+            <div class="left_city_list"><a href="">Bán nhà</a></div>
+            <div class="left_city_list"><a href="">Bán đất</a></div>
+            <div class="left_city_list"><a href="">Bán mặt bằng</a></div>
+            <div class="left_city_list"><a href="">Bán kho xưởng</a></div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading left_title_bds_thue"><i class="fas fa-home"></i> Nhà đất cho thuê</div>
+          <div class="panel-body cat_bds">
+            <div class="left_city_list"><a href="">Cho thuê đất </a></div>
+            <div class="left_city_list"><a href="">Cho thuê văn phòng</a></div>
+            <div class="left_city_list"><a href="">Cho thuê mặt bằng</a></div>
+            <div class="left_city_list"><a href="">Cho thuê kho xưởng</a></div>
+            <div class="left_city_list"><a href="">Cho thuê cửa hàng</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 main_content">
+
+      <!-- Slide -->
+      <div class='col-md-12 slide'>
+        <div class=''>
+          <div class="carousel slide col-md-12" data-ride="carousel" id="quote-carousel">
+            <!-- Bottom Carousel Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#quote-carousel" data-slide-to="1"></li>
+              <li data-target="#quote-carousel" data-slide-to="2"></li>
+            </ol>
+            
+            <!-- Carousel Slides / Quotes -->
+            <div class="carousel-inner">
+            
+              <!-- Quote 1 -->
+              <div class="item active">
+                    <div class="col-md-7 ">
+                      <img class="img_new_bds thumbnail" src="http://batdongsanbinhthuan.org/data/pictures_land/small_cci1438915348.jpg">
+                    </div>
+                    <div class=""> 
+                      <a href="" class="col-md-5 nd_slide">Tháp truyền hình Việt Nam dự kiến cao 636m</a>
+                      <p class="col-md-5">Thủ tướng chấp thuận chủ trương xây dựng sẽ thuộc loại cao nhất trong số tháp truyền hình đã được xây dựng trên thế giới.</p>
+                    </div>
+              </div>
+
+              <!-- Quote 2 -->
+              <div class="item">
+                    <div class="col-md-7 ">
+                      <img class="img_new_bds thumbnail" src="http://batdongsanbinhthuan.org/data/pictures_land/small_hgy1438836381.jpg">
+                    </div>
+                    <div class="">
+                      <a href="" class="col-md-5 nd_slide">Tháp truyền hình Việt Nam dự kiến cao 636m</a>
+                      <p class="col-md-5">Thủ tướng chấp thuận chủ trương xây dựng sẽ thuộc loại cao nhất trong số tháp truyền hình đã được xây dựng trên thế giới.</p>
+                    </div>
+              </div>
+
+              <!-- Quote 3 -->
+              <div class="item">
+                    <div class="col-md-7 ">
+                      <img class="img_new_bds thumbnail" src="http://batdongsanbinhthuan.org/data/pictures_land/small_hgy1438836381.jpg">
+                    </div>
+                    <div class="">
+                      <a href="" class="col-md-5 nd_slide">Tháp truyền hình Việt Nam dự kiến cao 636m</a>
+                      <p class="col-md-5">Thủ tướng chấp thuận chủ trương xây dựng sẽ thuộc loại cao nhất trong số tháp truyền hình đã được xây dựng trên thế giới.</p>
+                    </div>
+              </div>
+            </div>
+            
+            <!-- Carousel Buttons Next/Prev -->
+            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+          </div>                          
+        </div>
+      </div>
+
+
+
+      <!-- Service nhà đất nổi bật -->
+      <div class="col-md-12 primary_nhadat">
+        <div class="panel panel-primary home_content_bds">
+          <div class="panel-heading home_content_title"><i class="fas fa-landmark"></i> Nhà đất nổi bật</div>
+          <div class="panel-body nd_nhadat_nb">
+            <div class="col-md-4 land_big_list">
+              <img src="http://batdongsanbinhthuan.org/data/pictures_land/small_zoa1439261969.JPG" class="img_land_big col-xs-12">
+              <div class="home_land_title">
+                <a href="">Cần bán 115 m2  đất</a>
+              </div>
+              <b class="home_land_address">Phan Thiết, Bình Thuận</b>
+              <div class="home_land_price">
+                Giá: 700 Triệu
+              </div>
+            </div>
+
+            <div class="col-md-4 land_big_list">
+              <img src="http://batdongsanbinhthuan.org/data/pictures_land/small_zoa1439261969.JPG" class="img_land_big col-xs-12">
+              <div class="home_land_title">
+                <a href="">Cần bán 115 m2  đất</a>
+              </div>
+              <b class="home_land_address">Phan Thiết, Bình Thuận</b>
+              <div class="home_land_price">
+                Giá: 700 Triệu
+              </div>
+            </div>
+
+            <div class="col-md-4 land_big_list">
+              <img src="http://batdongsanbinhthuan.org/data/pictures_land/small_zoa1439261969.JPG" class="img_land_big col-xs-12">
+              <div class="home_land_title">
+                <a href="">Cần bán 115 m2  đất</a>
+              </div>
+              <b class="home_land_address">Phan Thiết, Bình Thuận</b>
+              <div class="home_land_price">
+                Giá: 700 Triệu
+              </div>
+            </div>
+
+            <div class="col-md-4 land_big_list">
+              <img src="http://batdongsanbinhthuan.org/data/pictures_land/small_zoa1439261969.JPG" class="img_land_big col-xs-12">
+              <div class="home_land_title">
+                <a href="">Cần bán 115 m2  đất</a>
+              </div>
+              <b class="home_land_address">Phan Thiết, Bình Thuận</b>
+              <div class="home_land_price">
+                Giá: 700 Triệu
+              </div>
+            </div>
+
+            <div class="col-md-4 land_big_list">
+              <img src="http://batdongsanbinhthuan.org/data/pictures_land/small_zoa1439261969.JPG" class="img_land_big col-xs-12">
+              <div class="home_land_title">
+                <a href="">Cần bán 115 m2  đất</a>
+              </div>
+              <b class="home_land_address">Phan Thiết, Bình Thuận</b>
+              <div class="home_land_price">
+                Giá: 700 Triệu
+              </div>
+            </div>
+
+            <div class="col-md-4 land_big_list">
+              <img src="http://batdongsanbinhthuan.org/data/pictures_land/small_zoa1439261969.JPG" class="img_land_big col-xs-12">
+              <div class="home_land_title">
+                <a href="">Cần bán 115 m2  đất</a>
+              </div>
+              <b class="home_land_address">Phan Thiết, Bình Thuận</b>
+              <div class="home_land_price">
+                Giá: 700 Triệu
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary content_duan">
+          <div class="panel-heading home_content_title">Dự án nổi bật</div>
+          <div class="panel-body">
+          </div>
+        </div>
+
+        <div class="panel panel-primary doi_tac">
+          <div class="panel-heading home_content_title">Doanh nghiệp</div>
+          <div class="panel-body nd_doitac">
+                <div class='col-md-12'>
+                  <div class="carousel slide media-carousel " id="media">
+                    <div class="carousel-inner info_doanhNghiep">
+                      <div class="item  active">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_pth1439261144.JPG"></a>
+                          </div>          
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_pth1439261144.JPG"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_pth1439261144.JPG"></a>
+                          </div> 
+
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_spq1438823895.jpg"></a>
+                          </div>          
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_spq1438823895.jpg"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_spq1438823895.jpg"></a>
+                          </div>        
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_pth1439261144.JPG"></a>
+                          </div>          
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_pth1439261144.JPG"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_pth1439261144.JPG"></a>
+                          </div>
+
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_spq1438823895.jpg"></a>
+                          </div>          
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_spq1438823895.jpg"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://batdongsanbinhthuan.org/data/pictures_land/small_spq1438823895.jpg"></a>
+                          </div> 
+                        </div>
+                      </div>
+
+                    </div>
+                    <a data-slide="prev" href="#media" class="left carousel-control lui">‹</a>
+                    <a data-slide="next" href="#media" class="right carousel-control tien">›</a>
+                  </div>                          
+                </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    
+    <div class="col-md-3 right_primary_bds">
+      <!-- Form Đăng ký, đăng nhập -->
+      <div class="jumbotron right_dangnhap">
+        <div class="right_dangnhap_primary">
+          <div class="right_dangnhap_title"><i class="fas fa-users"></i> Đăng ký / Đăng nhập</div>
+
+          <div class="form-group" id="username">
+            <input type="text" class="form-control" id="usr" placeholder="Tài khoản...">
+          </div>
+
+          <div class="form-group" id="password">
+            <input type="password" class="form-control" id="pwd" placeholder="******">
+          </div>
+
+          <div class="col-md-6" id="login">
+            <button class="btn btn-success" id="btn_login">Đăng nhập</button>
+          </div>
+          <div class="col-md-6 pull-right" id="register">
+            <button class="btn btn-danger" id="btn_dky">Đăng ký</button>
+          </div><br>
+
+          <div class="quên_acc">
+            <a href="">Quên mật khẩu ?</a>
+          </div>
+        </div>  
+      </div>
+
+      <!-- Đăng tin tức BĐS -->
+      <div class="post_new">
+        <a href="">
+          <img src="http://batdongsanbinhthuan.org/images/icon_dangtin.png" class="post_new">
+        </a>
+      </div>
+
+      <!-- Cập nhật tin tức mới nhất -->
+      <div class="panel panel-primary right_bds_new">
+        <div class="panel-heading title_new_bds"><i class="fas fa-newspaper"></i> Tin đăng mới nhất</div>
+
+        <div class="panel-body right_bds_content">
+          <div class="right_bds_list">
+            <a href="" class="new_bds"><i class="far fa-dot-circle"></i> Nothing in your eye</a><br>
+            <b class="home_land_address left">Hà Nội</b>
+            <span class="price_bds_right pull-right">Thỏa thuận</span>
+            <p class="right_bds_date">Cách đây 1 giây</p>
+          </div>
+
+          <div class="right_bds_list">
+            <a href="" class="new_bds"><i class="far fa-dot-circle"></i> Nothing in your eye</a><br>
+            <b class="home_land_address left">Hà Nội</b>
+            <span class="price_bds_right pull-right">Thỏa thuận</span>
+            <p class="right_bds_date">Cách đây 1 giây</p>
+          </div>
+
+          <div class="right_bds_list">
+            <a href="" class="new_bds"><i class="far fa-dot-circle"></i> Nothing in your eye</a><br>
+            <b class="home_land_address left">Hà Nội</b>
+            <span class="price_bds_right pull-right">Thỏa thuận</span>
+            <p class="right_bds_date">Cách đây 1 giây</p>
+          </div>
+
+          <div class="right_bds_list">
+            <a href="" class="new_bds"><i class="far fa-dot-circle"></i> Nothing in your eye</a><br>
+            <b class="home_land_address left">Hà Nội</b>
+            <span class="price_bds_right pull-right">Thỏa thuận</span>
+            <p class="right_bds_date">Cách đây 1 giây</p>
+          </div>
+
+          <div class="right_bds_list">
+            <a href="" class="new_bds"><i class="far fa-dot-circle"></i> Nothing in your eye</a><br>
+            <b class="home_land_address left">Hà Nội</b>
+            <span class="price_bds_right pull-right">Thỏa thuận</span>
+            <p class="right_bds_date">Cách đây 1 giây</p>
+          </div>
+        </div>
+        <div class="panel-footer text-center"><a href=""> <i class="fas fa-arrow-right"></i> Xem tất cả</a></div>
+      </div>
+
+      <!-- Đăng ký nhận Email -->
+      <div class="panel panel-primary register_receive_email">
+        <div class="panel-heading title_receive_email"><i class="far fa-envelope"></i> Đăng ký nhận Email</div>
+        <div class="panel-body nd_dky">
+          <p>Đăng ký để có thể nhận được bản tin mới nhất của chúng tôi</p>
+          <div class="form-group">
+            <input type="text" class="form-control" id="mail" placeholder="Email của bạn...">
+          </div>
+          <button class="btn btn-danger pull-right" id="resgiter_receive_new">Nhận bản tin</button>
+        </div>
+      </div>
+
+      <!-- Bảng giá dự án bất động sản -->
+      <div class="panel panel-primary Price_proj">
+        <div class="panel-heading title_price_proj"><!-- <i class="far fa-money-bill-alt"></i> --> Bảng giá dự án
+          <span class="pull-right"><a href="" class="view_all_price"><i class="fas fa-arrow-right"></i> Xem tất cả</a></span>
+        </div>
+        <div class="panel-body thitruong_proj">
+           <div class="">          
+            <table class="table table-responsive table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th class="">Tên dự án</th>
+                  <th class="">Giá (Triệu/m2)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="">Blue Sapphire Resort Long Hai</a></td>
+                  <td>22</td>
+                </tr>
+
+                <tr>
+                  <td><a href="">Vinpearl Đà Nẵng</a></td>
+                  <td>39.2-58.8</td>
+                </tr>
+
+                <tr>
+                  <td><a href="">Fusion Alya Lagi</a></td>
+                  <td>4.8-24.3</td>
+                </tr>
+
+                <tr>
+                  <td><a href="">Ocean Hill Village</a></td>
+                  <td>8.1-8.8</td>
+                </tr>
+
+                <tr>
+                  <td><a href="">Ocean Hill Village</a></td>
+                  <td>8.1-8.8</td>
+                </tr>
+
+                <tr>
+                  <td><a href="">Ocean Hill Village</a></td>
+                  <td>8.1-8.8</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script type="text/javascript">
+    $(function(){
+      $('.left_city_list, .header_right_cat').prepend('<i class="fas fa-arrow-circle-right"></i>');
+      $('.menu_expand:last()').css('border-right', 'none');
+      $('.right_bds_list:last()').css('border-bottom', 'none');
+      $('small').css('opacity', '0.6');
+      $('.navbar-inverse .navbar-nav>li>a:last():first()').css('border-right','none');
+    });
+
+
+    // Responsive mobile
+    $(window).resize(function(){
+
+       if ($(window).width() <= 320) {  
+
+              // is mobile device
+
+       }     
+    });
+
+
+    // Js cho slide
+    // When the DOM is ready, run this function
+    $(document).ready(function() {
+      //Set the carousel options
+      $('#quote-carousel').carousel({
+        pause: true,
+        interval: 5000,
+      });
+    });
+  </script>
+</body>
+</html>
+
